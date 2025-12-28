@@ -1,29 +1,40 @@
- 
 <!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Ex Umbra Banking System</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Ex Umbra Trading Terminal</title>
+    <link rel="stylesheet" href="trading.css">
 </head>
 <body>
-    <header>
-        <h1>Ex Umbra Bank</h1>
-        <div class="user-info">Utilisateur : <span>Hacker_741</span></div>
-    </header>
-    <main>
-        <section class="balance-card">
-            <h2>Solde Actuel</h2>
-            <p class="amount">12 450,00 €</p>
+    <div class="app-container">
+        <!-- Sidebar: Liste d'actifs -->
+        <aside class="market-list">
+            <h3>Marchés</h3>
+            <div class="asset"><span>BTC/USDT</span> <span class="up">+2.4%</span></div>
+            <div class="asset"><span>ETH/USDT</span> <span class="down">-1.1%</span></div>
+            <div class="asset"><span>SOL/USDT</span> <span class="up">+5.8%</span></div>
+        </aside>
+
+        <!-- Main: Graphique -->
+        <main class="chart-area">
+            <div class="chart-header">
+                <h2>BTC / Tether US</h2>
+                <span class="price">42 150.20 $</span>
+            </div>
+            <div id="tradingview_widget">
+                <!-- Emplacement pour un widget type TradingView -->
+                <div class="fake-chart"></div> 
+            </div>
+        </main>
+
+        <!-- Right: Panneau d'achat/vente -->
+        <section class="order-panel">
+            <h3>Passer un Ordre</h3>
+            <div class="tabs"><button class="active">Achat</button><button>Vente</button></div>
+            <input type="number" placeholder="Quantité">
+            <button class="buy-btn">Acheter BTC</button>
+            <div class="wallet-info">Disponible: <span>10 450 USDT</span></div>
         </section>
-        <section class="transactions">
-            <h3>Dernières Transactions</h3>
-            <ul>
-                <li><span>Transfert Sortant</span> <span class="minus">-300 €</span></li>
-                <li><span>Dépôt Crypto</span> <span class="plus">+1 200 €</span></li>
-                <li><span>Achat Serveur</span> <span class="minus">-45 €</span></li>
-            </ul>
-        </section>
-    </main>
+    </div>
 </body>
 </html>
