@@ -1,0 +1,12 @@
+body { background #0b0e11; color #eaecef; font-family 'Inter', sans-serif; margin 0; }
+.app-container { display grid; grid-template-columns 250px 1fr 300px; height 100vh; }
+
+.market-list, .order-panel { background #161a1e; padding 15px; border 1px solid #2b3139; }
+.asset { display flex; justify-content space-between; padding 10px 0; border-bottom 1px solid #2b3139; cursor pointer; }
+.up { color #0ecb81; } .down { color #f6465d; }
+
+.chart-area { padding 20px; display flex; flex-direction column; }
+.fake-chart { flex-grow 1; background linear-gradient(transparent 90%, #2b3139 90%), linear-gradient(90%, transparent 90%, #2b3139 90%); background-size 50px 50px; border 1px solid #2b3139; margin-top 20px; }
+
+.order-panel input { width 100%; padding 12px; background #2b3139; border none; color white; margin 20px 0; border-radius 4px; }
+.buy-btn { width 100%; padding 15px; background #0ecb81; border none; color black; font-weight bold; cursor pointer; border-radius 4px; }
